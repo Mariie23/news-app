@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">NewsApp</div>
+    </header>
+    <main>
+      <div class="container">
+        <form class="search-news" name="search-form">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mt-3">
+                <div class="card-body">
+                  <h3 class="card-title search-news__title">Search news</h3>
+                  <h6 class="card-subtitle search-news__subtitle">
+                    Choose your country
+                  </h6>
+                  <select
+                    class="form-select search-news__country mt-3"
+                    name="select-country"
+                  >
+                    <option value="ru">Russia</option>
+                    <option value="us">USA</option>
+                  </select>
+                  <input
+                    type="text"
+                    class="form-control search-news__text mt-3"
+                    name="search-input"
+                    id="search"
+                    placeholder="Search"
+                  />
+                  <button type="submit" class="btn btn-primary mt-3">
+                    Search
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="news mt-3">
+          <div class="row news__container"></div>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
